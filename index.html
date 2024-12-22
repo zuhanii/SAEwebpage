@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society of Automotive Engineers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SAE</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to SAE</h1>
+        <p>Driving Innovation in Automotive Engineering</p>
+        <a href="#about" class="cta">Learn More</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>The Society of Automotive Engineers (SAE) is dedicated to advancing mobility technology to serve humanity. Our mission is to promote and foster innovation in automotive engineering through cutting-edge projects, events, and collaborations.</p>
+    </section>
+
+    <section id="events" class="events">
+        <h2>Events</h2>
+        <p>Join us for exciting workshops, competitions, and seminars designed to inspire and educate.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Our Projects</h2>
+        <p>Explore our groundbreaking automotive projects and innovations that are shaping the future.</p>
+    </section>
+
+    <section id="team" class="team">
+        <h2>Meet the Team</h2>
+        <p>Get to know the passionate individuals behind SAE.</p>
+    </section>
+
+    <footer id="contact" class="footer">
+        <h2>Contact Us</h2>
+        <p>Email: info@sae.org | Phone: +123 456 7890</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling animation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Hero section animations
+        window.addEventListener('load', () => {
+            const heroText = document.querySelector('.hero h1');
+            const heroSubText = document.querySelector('.hero p');
+            heroText.style.opacity = 0;
+            heroSubText.style.opacity = 0;
+            heroText.style.transform = 'translateY(-50px)';
+            heroSubText.style.transform = 'translateY(-50px)';
+
+            setTimeout(() => {
+                heroText.style.transition = 'all 1s ease';
+                heroText.style.opacity = 1;
+                heroText.style.transform = 'translateY(0)';
+            }, 500);
+
+            setTimeout(() => {
+                heroSubText.style.transition = 'all 1s ease';
+                heroSubText.style.opacity = 1;
+                heroSubText.style.transform = 'translateY(0)';
+            }, 1000);
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #00509e;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #a1d0ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #00509e, #a1d0ff);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #00509e;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .cta:hover {
+            background-color: #a1d0ff;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .footer {
+            background-color: #00509e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer a {
+            color: #a1d0ff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>
