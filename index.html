@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE-VIT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SAE-VIT</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to SAE-VIT</h1>
+        <p>Driving Innovation in Automotive Engineering</p>
+        <a href="#about" class="cta">Learn More</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>The Society of Automotive Engineers (SAE) is dedicated to advancing mobility technology to serve humanity. Our mission is to promote and foster innovation in automotive engineering through cutting-edge projects, events, and collaborations.</p>
+    </section>
+
+    <footer id="contact" class="footer">
+        <h2>Contact Us</h2>
+        <p>Email: sae@vit.ac.in | Phone: +91 93749 15151</p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com/sae-vit/">Facebook</a> |
+            <a href="https://www.instagram.com/sae_vit/">Instagram</a> |
+            <a href="https://www.linkedin.com/company/society-of-automotive-engineers-vit-vellore-/posts/?feedView=all">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const heroText = document.querySelector('.hero h1');
+            const heroSubText = document.querySelector('.hero p');
+            heroText.style.opacity = 0;
+            heroSubText.style.opacity = 0;
+            heroText.style.transform = 'translateY(-50px)';
+            heroSubText.style.transform = 'translateY(-50px)';
+
+            setTimeout(() => {
+                heroText.style.transition = 'all 1s ease';
+                heroText.style.opacity = 1;
+                heroText.style.transform = 'translateY(0)';
+            }, 500);
+
+            setTimeout(() => {
+                heroSubText.style.transition = 'all 1s ease';
+                heroSubText.style.opacity = 1;
+                heroSubText.style.transform = 'translateY(0)';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
