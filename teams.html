@@ -4,14 +4,90 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SAE-VIT</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <style>
+            .main{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: #0c5db9;
+            }
+            .profile-card{
+                position: relative;
+                font-family: sans-serif;
+                width: 220px;
+                height: 220px;
+                background: #fff;
+                padding: 30px;
+                border-radius: 50%;
+                box-shadow: 0 0 22px #3336;
+                transition: .6s;
+                margin: 50px 25px;
+            }
+            .profile-card:hover{
+                border-radius: 10px;
+                height: 260px;
+            }
+            .profile-card .img{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: .6s;
+                z-index: 99;
+            }
+            .profile-card:hover .img{
+                transform: translateY(-60px);
+            }
+            .img img{
+                width: 100%;
+                border-radius: 50%;
+                box-shadow: 0 0 22px #3336;
+                transition: .6s;
+            }
+            .profile-card:hover img{
+                border-radius: 10px;
+            }
+            .caption{
+                text-align: center;
+                transform: translateY(-80px);
+                opacity: 0;
+                transition: .6s;
+            }
+            .profile-card:hover .caption{
+                opacity: 1;
+            }
+            .caption h3{
+                font-size: 21px;
+                font-family: sans-serif;
+                margin-bottom: 5%;
+            }
+            .caption p{
+                font-size: 15px;
+                color: #0c52a1;
+                font-family: sans-serif;
+                margin: 2px 0 9px 0;
+            }
+            .caption .social-links a{
+                color: #333;
+                margin-right: 15px;
+                font-size: 21px;
+                transition: .6s;
+            }
+            .social-links a:hover{
+                color: #0c52a1;
+            }
+        </style>
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="logo">SAE-VIT</div>
                 <ul class="nav-links">
-                    <li><a href="index.htm">About</a></li>
+                    <li><a href="index.html">About</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="teams.html">Teams</a></li>
                      <li><a href="board.html">Board</a></li>
@@ -20,8 +96,205 @@
             </nav>
         </header>
 
-        <h2>Meet the Team</h2>
-        <p>Get to know the passionate individuals behind SAE.</p>
+        <h1>Introducing Our Teams</h1>
+
+        <div class="main">
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/ALBATROSS.png">
+                </div>
+                <div class="caption">
+                    <h3>ALBATROSS</h3>
+                    <p>Airplane Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/ASENA.jpg">
+                </div>
+                <div class="caption">
+                    <h3>ASENA</h3>
+                    <p>Women's Formula Student Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/CELERITY.png">
+                </div>
+                <div class="caption">
+                    <h3>CELERITY</h3>
+                    <p>Economic Automobile Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/CURTISS.png">
+                </div>
+                <div class="caption">
+                    <h3>CURTISS RC</h3>
+                    <p>RC Airplane Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/FALCONS.png">
+                </div>
+                <div class="caption">
+                    <h3>ASSAILING FALCONS</h3>
+                    <p>Airplane Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/JAABAS.png">
+                </div>
+                <div class="caption">
+                    <h3>JAABAZ</h3>
+                    <p>ATV Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/K.png">
+                </div>
+                <div class="caption">
+                    <h3>KSHATRIYA</h3>
+                    <p>ATV Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/KEV.png">
+                </div>
+                <div class="caption">
+                    <h3>KSHATRIYA ELECTRIC</h3>
+                    <p>Electric ATV Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/MOTOX.png">
+                </div>
+                <div class="caption">
+                    <h3>MOTOX</h3>
+                    <p>Sports Cycle Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/OJAS.png">
+                </div>
+                <div class="caption">
+                    <h3>OJAS</h3>
+                    <p>Electric Formula Student Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/PRAVEGA.png">
+                </div>
+                <div class="caption">
+                    <h3>PRAVEGA</h3>
+                    <p>ICE Formula Student Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/REV.png">
+                </div>
+                <div class="caption">
+                    <h3>REV MECHANICS</h3>
+                    <p>Moto Student Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/ROTOR.png">
+                </div>
+                <div class="caption">
+                    <h3>ROTOR</h3>
+                    <p>Drone Building Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/UTTEJIT.jpg">
+                </div>
+                <div class="caption">
+                    <h3>UTTEJIT</h3>
+                    <p>Hybrid Formula Student Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="images/VIMAANAS.jpg">
+                </div>
+                <div class="caption">
+                    <h3>VIMAANAS</h3>
+                    <p>Micro Airplane Team</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer id="contact" class="footer">
             <h2>Contact Us</h2>
